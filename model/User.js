@@ -1,15 +1,12 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
-const passportLocalMongoose = require('passport-local-mongoose');
+const mongoose = require("mongoose");
+const passportLocalMongoose = require("passport-local-mongoose");
 
-var User = new Schema({
-    username: {
-        type: String
-    },
-    password: {
-        type: String
-    }
+const UserSchema = new mongoose.Schema({
+    username: String,
+    // password and salt are handled automatically by the plugin
 });
 
-User.plugin(passportLocalMongoose);
-module.exports = mongoose.model('User', User);
+// This plugin adds the .register(), .authenticate() methods to the User model
+UserSchema.plugin(passportLocalMongoose);
+
+module.exports = mongoose.model("User", UserSchema);
