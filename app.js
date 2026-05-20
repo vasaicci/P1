@@ -13,7 +13,7 @@ const app = express();
 // NOTE: Replace the connection string below with your own MongoDB Atlas connection string
 // or use a local connection string like: mongodb://127.0.0.1:27017/Library
 mongoose.connect(
-    `mongodb://127.0.0.1:27017/Library`
+    `mongodb+srv://vasaicci:Aptech@123@cluster0.5p2cyrc.mongodb.net/?appName=Cluster0`
 );
 
 app.set("view engine", "ejs");
