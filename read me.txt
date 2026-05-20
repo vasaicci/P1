@@ -1,0 +1,6 @@
+npm install mongoose
+
+admin user is Admin
+password is 12345
+
+
