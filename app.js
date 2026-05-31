@@ -13,7 +13,7 @@ const app = express();
 // Database Connection
 // NOTE: I added error handling here to help you debug if the password is wrong.
 mongoose.connect(
-    `mongodb+srv://sajid:12345@cluster0.5p2cyrc.mongodb.net/Library?appName=Cluster0`
+    `mongodb+srv://user:Aptech@123@cluster0.5p2cyrc.mongodb.net/Library?appName=Cluster0`
 )
 .then(() => console.log("✅ Successfully connected to MongoDB Atlas."))
 .catch((err) => console.error("❌ MongoDB Connection Error:", err));
